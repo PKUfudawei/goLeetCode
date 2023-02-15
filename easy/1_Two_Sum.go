@@ -1,6 +1,6 @@
 package goLeetCode
 
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
 		another := target - nums[i]

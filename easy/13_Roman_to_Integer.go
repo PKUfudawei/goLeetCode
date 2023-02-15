@@ -1,6 +1,6 @@
 package goLeetCode
 
-func romanToInt(s string) int {
+func RomanToInt(s string) int {
 	roman := map[string]int{
 		"I": 1,
 		"V": 5,

@@ -2,7 +2,7 @@ package goLeetCode
 
 import "strconv"
 
-func isPalindrome(x int) bool {
+func IsPalindrome(x int) bool {
 	s := strconv.Itoa(x)
 	length := len(s)
 	for i := 0; i <= length/2; i++ {
