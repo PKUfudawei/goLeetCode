@@ -1,13 +1,14 @@
 package goLeetCode
 
 func TwoSum(nums []int, target int) []int {
-	m := make(map[int]int)
-	for i := 0; i < len(nums); i++ {
-		another := target - nums[i]
-		if _, ok := m[another]; ok {
-			return []int{m[another], i}
+	num_index := map[int]int{}
+	for index, value := range nums {
+		gap := target - value
+		if _value, ok := num_index[gap]; ok {
+			_value += 0
+			return []int{num_index[gap], index}
 		}
-		m[nums[i]] = i
+		num_index[value] = index
 	}
 	return nil
 }
