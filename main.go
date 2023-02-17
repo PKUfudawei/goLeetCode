@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, World!")
-	fmt.Println(goLeetCode.RemoveDuplicates([]int{1, 2, 4}))
+	fmt.Println(goLeetCode.SearchInsert([]int{1, 3, 5, 6}, 4))
 }

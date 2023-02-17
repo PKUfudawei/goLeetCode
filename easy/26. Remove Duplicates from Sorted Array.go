@@ -1,19 +1,15 @@
 package goLeetCode
 
 func RemoveDuplicates(nums []int) int {
-	if len(nums) == 0 {
+	if len(nums) < 1 {
 		return 0
 	}
-	last, finder := 0, 0
-	for last < len(nums)-1 {
-		for nums[finder] == nums[last] {
-			finder++
-			if finder == len(nums) {
-				return last + 1
-			}
+	unique := 0
+	for i, num := range nums {
+		if num != nums[unique] {
+			unique += 1
+			nums[unique] = nums[i]
 		}
-		nums[last+1] = nums[finder]
-		last++
 	}
-	return last + 1
+	return unique + 1
 }
