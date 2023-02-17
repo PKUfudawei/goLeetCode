@@ -1,19 +1,16 @@
 package goLeetCode
 
 func SearchInsert(nums []int, target int) int {
-	if len(nums) == 1 {
-		if nums[0] >= target {
-			return 0
+	start, end := 0, len(nums)-1
+	for start <= end {
+		middle := (start + end) / 2
+		if nums[middle] == target {
+			return middle
+		} else if nums[middle] > target {
+			end = middle - 1
 		} else {
-			return 1
+			start = middle + 1
 		}
 	}
-	middle := len(nums) / 2
-	if nums[middle] == target {
-		return middle
-	} else if nums[middle] > target {
-		return SearchInsert(nums[:middle], target)
-	} else {
-		return middle + SearchInsert(nums[middle:], target)
-	}
+	return end + 1
 }
