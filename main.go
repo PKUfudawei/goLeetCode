@@ -7,5 +7,5 @@ import (
 
 func main() {
 	fmt.Println("Hello, World!")
-	fmt.Println(goLeetCode.LongestCommonPrefix([]string{"flower", "flow", "flight"}))
+	fmt.Println(goLeetCode.RemoveDuplicates([]int{1, 2, 4}))
 }
