@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(goLeetCode.SearchInsert([]int{1, 3, 5, 6}, 4))
+	fmt.Println(goLeetCode.AddBinary("1010", "1011"))
 }
