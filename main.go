@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(goLeetCode.AddBinary("1010", "1011"))
+	fmt.Println(goLeetCode.ClimbStairs(5))
 }
