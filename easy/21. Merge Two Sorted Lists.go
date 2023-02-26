@@ -1,16 +1,8 @@
 package goLeetCode
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import "goLeetCode/structure"
+
+type ListNode = structure.ListNode
 
 func MergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	if list1 == nil {

@@ -1,11 +1,8 @@
 package goLeetCode
 
-// Definition for a binary tree node.
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+import "goLeetCode/structure"
+
+type TreeNode = structure.TreeNode
 
 func InorderTraversal(root *TreeNode) []int {
 	if root == nil {
