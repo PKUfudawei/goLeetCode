@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(goLeetCode.Generate(5))
+	fmt.Println(goLeetCode.StrStr("leetcode", "leeto"))
 }
