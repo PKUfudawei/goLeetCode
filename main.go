@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(5 ^ 2)
-	fmt.Println(goLeetCode.IsPalindromeString("leetASDcode, 123 ads"))
+	fmt.Println(goLeetCode.ConvertToTitle(1234))
 }
