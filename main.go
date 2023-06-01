@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(goLeetCode.ConvertToTitle(1234))
+	fmt.Println(goLeetCode.MajorityElement([]int{2, 2, 1, 1, 1, 2, 2}))
 }
