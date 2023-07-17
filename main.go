@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(goLeetCode.MajorityElement([]int{2, 2, 1, 1, 1, 2, 2}))
+	fmt.Println(goLeetCode.IsIsomorphic("sda", "sd1"))
 }
